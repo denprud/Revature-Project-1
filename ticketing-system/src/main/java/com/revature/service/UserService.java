@@ -36,12 +36,12 @@ public class UserService {
         return registerUser(user);
     }
 
-    private User findByUsername(String username) {
+    public User findByUsername(String username) {
         // Implementation to find user by username
         return userRepository.findByUsername(username);
     }
 
-    private User registerUser(User user) {
+    public User registerUser(User user) {
         // Implementation to register a new user
         return userRepository.save(user);
     }
